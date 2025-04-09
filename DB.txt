@@ -1,0 +1,18 @@
+create database Assessment;
+use Assessment;
+
+create table signup(username varchar(50) primary key,
+password varchar(50),
+contact_no varchar(15),
+email varchar(50),
+address varchar(50));
+
+create table challenges(challenge_id int,
+challenge_data varchar(500),
+challenge_date date);
+
+create table challenge_result(challenge_id int,
+student_name varchar(50),
+student_answer varchar(500),
+score varchar(30));
+

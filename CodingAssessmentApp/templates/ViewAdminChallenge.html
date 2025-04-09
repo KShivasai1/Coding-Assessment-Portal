@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+<title>Coding Assessment Portal</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><span>Coding Assessment Portal</span><small></small></h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="menu_nav">
+         <ul>
+        <li><a href="{% url 'PythonAssessment' %}">Python Assessment</a></li>
+	   <li><a href="{% url 'JavaAssessment' %}">Java Assessment</a></li>
+	   <li><a href="{% url 'ViewAdminChallenge' %}">View Challenges</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li> 
+   </ul>
+        </div>
+        <div class="hbg"><img src="{% static 'images/header_images.jpg' %}" width="915" height="286" alt="" /></div>
+		<table border="1" align="center">
+		<tr><th><font size="" color="black">Challenge ID</font></th><th><font size="" color="black">Challenge Details</font></th>
+		<th><font size="" color="black">Date of Challenge</font></th>
+		<th><font size="" color="black">Accept Challenge</font></th>
+		</tr>
+		{{ data|safe }}
+
+       </table><br/><br/><br/>
+  </body>
+</html>
