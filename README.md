@@ -2,9 +2,7 @@ Coding Assessment Portal
 
 A web-based application built to manage and conduct coding tests for students or job applicants. The platform supports multiple-choice questions and code-based problems, complete with login authentication, test-timing features, and result tracking.
 ---
-![Python](https://img.shields.io/badge/Python-3.11-blue) 
-![Django](https://img.shields.io/badge/Django-4.2-green)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 ---
 
